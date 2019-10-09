@@ -62,7 +62,6 @@ public class MovieRecommender {
 
             }else if (line.startsWith("review/score:")) {
                 this.totalReviews ++;
-                //write into CSV to create model
                 csvWriter.println(users.get(user) + "," + products.get(product) + "," + line.split(": ")[1]);
 
             }
