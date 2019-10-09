@@ -20,9 +20,7 @@ public class MovieRecommender {
     private String path;
     int information;
 
-    //To save productID with productStringID
     BiMap<String, Long> products ;
-    //To save UserID with userStringID
     BiMap<String, Long> users ;
     long totalReviews = 0;
     PrintWriter csvWriter ;
